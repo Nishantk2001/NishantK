@@ -24,11 +24,33 @@ const HeroSection = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-32 right-16 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float delay-300"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/5 to-transparent rounded-full blur-3xl animate-glow"></div>
+      {/* Code-related floating elements */}
+      <div className="absolute top-32 right-32 text-primary/30 text-2xl font-mono animate-float-slow delay-200">
+        {"{404}"}
+      </div>
+      <div className="absolute bottom-48 left-32 text-primary/25 text-lg font-mono animate-pulse-slow">
+        {"</>"}
+      </div>
+      <div className="absolute top-64 left-64 text-primary/20 text-sm font-mono animate-rotate-slow">
+        console.log
+      </div>
+      <div className="absolute bottom-64 right-48 text-primary/15 text-xs font-mono animate-slide-horizontal">
+        const
+      </div>
+      <div className="absolute top-48 left-48 text-primary/30 text-xl animate-float delay-600">
+        ⚡
+      </div>
+      <div className="absolute bottom-32 right-64 text-primary/25 text-lg animate-bounce-slow">
+        🎨
+      </div>
+
+      {/* UI/UX Design elements */}
+      <div className="absolute top-24 right-24 w-8 h-8 border-2 border-primary/20 rounded animate-spin-slow"></div>
+      <div className="absolute bottom-24 left-24 w-6 h-6 bg-primary/15 animate-morph"></div>
+      <div className="absolute top-80 left-80 flex gap-1 animate-float delay-400">
+        <div className="w-2 h-2 bg-primary/30 rounded-full"></div>
+        <div className="w-2 h-2 bg-primary/25 rounded-full"></div>
+        <div className="w-2 h-2 bg-primary/20 rounded-full"></div>
       </div>
 
       <div className="section-container relative z-10">
