@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, Mouse, ChevronDown } from "lucide-react";
+import heroBackground from "../assets/homebg.jpg";
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
@@ -24,6 +25,12 @@ const HeroSection = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        <div className="absolute inset-0 bg-background/80"></div>
+      </div>
       {/* Code-related floating elements */}
       <div className="absolute top-32 right-32 text-primary/30 text-2xl font-mono animate-float-slow delay-200">
         {"{404}"}

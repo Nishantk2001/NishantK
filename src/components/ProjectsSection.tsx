@@ -182,9 +182,9 @@ const ProjectsSection = () => {
 
         {/* View All Projects */}
         <div className="text-center mt-12">
-          <a href="#contact" className="btn-secondary">
+          <Link to="/projects" className="btn-secondary">
             View All Projects
-          </a>
+          </Link>
         </div>
       </div>
     </section>

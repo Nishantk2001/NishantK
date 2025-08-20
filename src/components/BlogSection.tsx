@@ -225,9 +225,9 @@ const BlogSection = () => {
 
             {/* View All Posts */}
             <div className="pt-4">
-              <a href="/blog" className="btn-secondary w-full justify-center">
+              <Link to="/blog" className="btn-secondary w-full justify-center">
                 View All Posts
-              </a>
+              </Link>
             </div>
           </div>
         </div>
